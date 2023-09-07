@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        img{
+            width: 100%;
+            height: 200px;
+        }
+    
+        .buttons{
+            text-align: center;
+            margin-top: 10px;
+
+        }
+
+        button{
+            border: none;
+            padding: 10px 10px;
+            font-size: x-large;
+            border-radius: 50%;
+
+        }
+        
+
+    </style>
+    <div  id="slider" style=  "width: 356px; margin-left: 500px; overflow: hidden;" >
+    <div id="slide-child" style=  "display: flex; transform: translateX(0px); transition: transform 1s;">
+        <img src="images/jiuzhaigou2.jpg" alt="">
+        <img  src="images/jiuzhaigou3.jpg" alt="">
+        <img src="images/jiuzhaigou4.jpg" alt="">
+    </div>
+</div>
+<div id="buttons" class="buttons">
+    <button onclick ="onNextClick()">&#8592;</button>
+    <button onclick ="onPreviousClick()">&#8594;</button>
+
+</div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
